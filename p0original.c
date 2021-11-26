@@ -1,7 +1,6 @@
- 
 #include <stdio.h>
 
 int main(void) {
-  printf("Maha Lakshmi\n");
+  printf("my name is maaaaaalaxmi\n");
   return 0;
 }
