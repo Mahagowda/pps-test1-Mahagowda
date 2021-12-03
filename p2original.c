@@ -8,9 +8,9 @@ int input()
 }
 int find_sum(int a,int b)
 {
-  int sum;
+  
   sum=a+b;
-  return sum;
+  
 }
 int output(int a,int c,int sum)
 {
