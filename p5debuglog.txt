@@ -1,0 +1,56 @@
+(gdb) b main
+Breakpoint 1 at 0x814: file p5original.c, line 24.
+(gdb) r
+Starting program: /home/runner/pps-test1-Mahagowda-12/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p5original.c:24
+24  {
+(gdb) n
+26    x=input();
+(gdb) n
+enter the number:3
+27    y=input();
+(gdb) n
+enter the number:5
+28    z=input();
+(gdb) n
+enter the number:7
+29    l=cmp(&x,&y,&z);
+(gdb) n
+30    output(l);
+(gdb) n
+largest number is:7
+31    return 0;
+(gdb) n
+32  }(gdb) c
+Continuing.
+[Inferior 1 (process 54) exited normally]
+(gdb)
+
+
+
+(gdb) b main
+Breakpoint 1 at 0x7c7: file p5final.c, line 23.
+(gdb) r
+Starting program: /home/runner/pps-test1-Mahagowda-12/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p5final.c:23
+23    x=input();
+(gdb) n
+enter the number3
+24    y=input();
+(gdb) n
+enter the number7
+25    z=add(x,y);
+(gdb) n
+26    output(x,y,z);
+(gdb) n
+sum of 3 +7 is 10
+27    return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 81) exited normally]
+(gdb) 
+
