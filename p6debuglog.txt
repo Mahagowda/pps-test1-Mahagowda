@@ -1,0 +1,30 @@
+GNU bash, version 4.4.20(1)-release (x86_64-pc-linux-gnu)
+(gdb) b main
+Breakpoint 1 at 0x722: file p6original.c, line 3.
+(gdb) r
+Starting program: /home/runner/pps-test1-Mahagowda-17/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p6original.c:3
+3   {
+(gdb) n
+4     int n,i,sum=0;
+(gdb) n
+5     printf("enter positive integer:");
+(gdb) n
+6     scanf("%d",&n);
+(gdb) n
+enter positive integer:1
+7     for(i=1;i<=n;++i) {
+(gdb) n
+8       sum += i;
+(gdb) n
+7     for(i=1;i<=n;++i) {
+(gdb) n
+10    printf("sum = %d",sum);
+(gdb) n
+11    return 0;
+(gdb) c
+Continuing.
+sum = 1[Inferior 1 (process 89) exited normally]
+(gdb)
