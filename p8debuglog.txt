@@ -1,1 +1,24 @@
+Reading symbols from a.out...
+(gdb) b main
+Note: breakpoint 1 also set at pc 0x11a9.
+Breakpoint 2 at 0x11a9: file main.c, line 4.
+(gdb) r
+Starting program: /home/a.out 
 
+Breakpoint 1, main () at main.c:4
+4       {
+(gdb) n
+7         printf("enter a number:");
+(gdb) n
+8         scanf("%d",&n);
+(gdb) n
+enter a number:5
+9         v=sqrt(n);
+(gdb) n
+10        printf("square root of %d is %f",n,v);
+(gdb) n
+11      }
+(gdb) c
+Continuing.
+square root of 5 is 2.236068[Inferior 1 (process 2079) exited normally]
+(gdb)
